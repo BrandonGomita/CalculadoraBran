@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="java/java.js"></script>
+    <title>Calculadora Brandon</title>
+</head>
+<body>
+    <div id="calcul">
+            <form name="calculadora">
+                <input type="textfield" name="resp" value="" autocomplete="off" readonly>
+            <input type="reset" value="AC" class="azulito">
+            <input type="button" value="+/-" onclick="document.calculadora.resp.value =eval(document.calculadora.resp.value*-1)" class="azulito">
+            <input type="button" value="%" onclick="document.calculadora.resp.value =eval(document.calculadora.resp.value/100)" class="azulito">
+            <input type="button" value="/" onclick="document.calculadora.resp.value+='/'" class="amarillo">
+            <br>
+            <input type="button" value="7" onclick="document.calculadora.resp.value+='7'" class="cyan">
+            <input type="button" value="8" onclick="document.calculadora.resp.value+='8'" class="cyan">
+            <input type="button" value="9" onclick="document.calculadora.resp.value+='9'" class="cyan">
+            <input type="button" value="*" onclick="document.calculadora.resp.value+='*'" class="amarillo">                
+            <br>
+            <input type="button" value="4" onclick="document.calculadora.resp.value+='4'" class="cyan">
+            <input type="button" value="5" onclick="document.calculadora.resp.value+='5'" class="cyan">
+            <input type="button" value="6" onclick="document.calculadora.resp.value+='6'" class="cyan">
+            <input type="button" value="-" onclick="document.calculadora.resp.value+='-'" class="amarillo">
+            <br>
+            <input type="button" value="1" onclick="document.calculadora.resp.value+='1'" class="cyan">
+            <input type="button" value="2" onclick="document.calculadora.resp.value+='2'" class="cyan">
+            <input type="button" value="3" onclick="document.calculadora.resp.value+='3'" class="cyan">
+            <input type="button" value="+" onclick="document.calculadora.resp.value+='+'" class="amarillo">
+            <br>
+            <input type="button" value="0" onclick="document.calculadora.resp.value+='0'" class="cyan">
+            <input type="button" value="." onclick="document.calculadora.resp.value+='.'" class="cyan">
+            <input type="button" value="="
+            onclick="document.calculadora.resp.value=eval(document.calculadora.resp.value)" class="amarillo">
+            </form>
+    </div>
+                     
+</body>
+
+</html> 
